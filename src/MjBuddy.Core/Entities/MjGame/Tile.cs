@@ -6,7 +6,7 @@ namespace MjBuddy.Core.Entities.MjGame
     public class Tile
     {
         public int Id { get; set; }
-        public TileType Type { get; set; }
+        public TileFigure Type { get; set; }
         public TileValue Value { get; set; }
         public string Image { get; set; }
         public string ImageSmall { get; set; }

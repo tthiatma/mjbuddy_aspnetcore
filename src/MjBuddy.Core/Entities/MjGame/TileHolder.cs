@@ -1,11 +1,11 @@
 ﻿namespace MjBuddy.Core.Entities.MjGame
 {
-    public enum TileStatus
+    public enum TileHolder
     {
         //Tile belongs to the board
-        Unrevealed = 0,
+        Board = 0,
         //Tile just picked from the board
-        JustPicked = 1,
+        UserPicked = 1,
         //Tile that is on player's hand
         UserActive = 2,
         //Tile is kept by player

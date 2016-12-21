@@ -1,12 +1,15 @@
 ﻿namespace MjBuddy.Core.Entities.MjGame
 {
+    /// <summary>
+    /// Represents tiles in game showing who has the tile and the tile status
+    /// </summary>
     public class TileGame
     {
         public int Id { get; set; }
        
         public Tile Tile { get; set; }
 
-        public TileStatus TileStatus { get; set; }
+        public TileHolder TileStatus { get; set; }
 
         //this is to show which user id own the tile
         public string Owner { get; set; }
