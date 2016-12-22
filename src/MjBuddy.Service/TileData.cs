@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MjBuddy.Core.Entities;
+﻿using System.Linq;
 using MjBuddy.EntityFrameworkCore;
+using MjBuddy.Core.Entities.MjGame;
 
 namespace MjBuddy.Service
 {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MjBuddy.Core.Entities;
 using MjBuddy.Core.Entities.Account;
+using MjBuddy.Core.Entities.MjGame;
 
 namespace MjBuddy.EntityFrameworkCore
 {
