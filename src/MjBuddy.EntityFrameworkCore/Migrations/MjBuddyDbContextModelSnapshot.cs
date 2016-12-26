@@ -172,12 +172,20 @@ namespace MjBuddy.EntityFrameworkCore.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("MjBuddy.Core.Entities.Tile", b =>
+            modelBuilder.Entity("MjBuddy.Core.Entities.MjGame.Tile", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Image");
+
+                    b.Property<string>("ImageSmall");
+
                     b.Property<string>("Name");
+
+                    b.Property<int>("Type");
+
+                    b.Property<int>("Value");
 
                     b.HasKey("Id");
 

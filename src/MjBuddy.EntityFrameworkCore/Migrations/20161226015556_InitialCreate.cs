@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -67,7 +68,11 @@ namespace MjBuddy.EntityFrameworkCore.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true)
+                    Image = table.Column<string>(nullable: true),
+                    ImageSmall = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: true),
+                    Type = table.Column<int>(nullable: false),
+                    Value = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

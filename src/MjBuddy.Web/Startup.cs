@@ -14,6 +14,7 @@ using Microsoft.EntityFrameworkCore;
 using MjBuddy.Core.Entities.Account;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Routing;
+using MjBuddy.EntityFrameworkCore.Migrations.SeedData;
 
 namespace MjBuddy.Web
 {
@@ -75,6 +76,7 @@ namespace MjBuddy.Web
             app.UseFileServer();
 
             //app.UseNodeModules(env.ContentRootPath);
+            app.SeedData();
 
             app.UseIdentity();
 

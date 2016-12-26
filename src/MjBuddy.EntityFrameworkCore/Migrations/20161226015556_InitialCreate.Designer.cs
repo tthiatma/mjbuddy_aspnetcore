@@ -8,7 +8,7 @@ using MjBuddy.EntityFrameworkCore;
 namespace MjBuddy.EntityFrameworkCore.Migrations
 {
     [DbContext(typeof(MjBuddyDbContext))]
-    [Migration("20161215182111_InitialCreate")]
+    [Migration("20161226015556_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -173,12 +173,20 @@ namespace MjBuddy.EntityFrameworkCore.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("MjBuddy.Core.Entities.Tile", b =>
+            modelBuilder.Entity("MjBuddy.Core.Entities.MjGame.Tile", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Image");
+
+                    b.Property<string>("ImageSmall");
+
                     b.Property<string>("Name");
+
+                    b.Property<int>("Type");
+
+                    b.Property<int>("Value");
 
                     b.HasKey("Id");
 
