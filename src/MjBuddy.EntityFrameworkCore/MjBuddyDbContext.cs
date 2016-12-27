@@ -13,5 +13,9 @@ namespace MjBuddy.EntityFrameworkCore
         }
 
         public DbSet<Tile> Tiles { get; set; }
+        public DbSet<TileGame> TileGames { get; set; }
+        public DbSet<Game> Games { get; set; }
+        public DbSet<GameRecord> GameRecords { get; set; }
+
     }
 }
