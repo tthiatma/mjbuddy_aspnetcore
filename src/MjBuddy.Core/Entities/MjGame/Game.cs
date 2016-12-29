@@ -1,12 +1,12 @@
-﻿using MjBuddy.Core.Entities.Account;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MjBuddy.Core.Entities.MjGame
 {
+    [Table("AppGames")]
     public class Game
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string Name { get; set; }
-        public GameSetting Setting { get; set; }
+        public Setting Setting { get; set; }
     }
 }

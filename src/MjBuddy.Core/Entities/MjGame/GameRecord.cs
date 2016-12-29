@@ -1,7 +1,11 @@
-﻿namespace MjBuddy.Core.Entities.MjGame
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace MjBuddy.Core.Entities.MjGame
 {
+    [Table("AppGameRecords")]
     public class GameRecord
     {
+        public long Id { get; set; }
         public WindDirection CurrentWind { get; set; }
         public int TilesLeft { get; set; }
         public TileGame LastTile { get; set; }        

@@ -2,8 +2,8 @@
 {
     public enum TileFigure
     {
-        Circle,
-        Money,
+        Pin,
+        Man,
         Bamboo,
         Wind,
         Dragon,

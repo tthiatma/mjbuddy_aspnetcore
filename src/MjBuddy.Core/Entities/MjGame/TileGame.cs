@@ -1,11 +1,15 @@
-﻿namespace MjBuddy.Core.Entities.MjGame
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace MjBuddy.Core.Entities.MjGame
 {
     /// <summary>
     /// Represents tiles in game showing who has the tile and the tile status
     /// </summary>
+    /// 
+    [Table("AppTileGames")]
     public class TileGame
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
        
         public Tile Tile { get; set; }
 
